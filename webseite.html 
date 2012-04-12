@@ -1,6 +1,9 @@
 <html>
 <head>
 <script type="text/javascript" src="bootstrap/js/bootstrap.js" ></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js" ></script>
+
+
 <link type="text/css" href="bootstrap/css/bootstrap.css" rel="stylesheet" >
 <style type="text/css">
               #eigen2 { margin-left: 75%;
@@ -8,7 +11,7 @@
                         margin-top:5%;
 
               }
-              #frame { border-style: solid;
+              #frame { border: none;
 
                       margin-left:5%;
                       position: absolute;
@@ -19,14 +22,26 @@
   </style>
   <script type="text/javascript">
 
-  // Funktionert leider noch nicht :(
+  
   
   function inhalt_wechsel(pfad){
 
-     parent[frame].location.href = "blog.html";
+     parent['frame'].location.href = pfad;
 
   }
-  
+
+  //Don't work :(
+  function blau_unterstreichen(link){
+
+    jquery(link).css({'text-decoration':'overline;'})
+
+
+
+  }
+  function blau_bag(){
+    jquery(link).css({'text-decoration':'none;'})
+  }
+  // Up to here :(
   </script>
 
 </head>
@@ -41,10 +56,10 @@
   Jan's Blog 
          </a>
      <li class="active">
-            <a href="#" onClick="inhalt_wechsel('home.html');">Home</a>
+            <a href="#" id="link1" onClick="inhalt_wechsel('home.html');" onMouseover="blau_untersctreichen('#link1');" onMouseout="blau_bag('#link1');">Home</a>
       </li>
-       <li><a href="#" onClick="inhalt_wechsel('blog.html');">Link</a></li>
-       <li><a href="#" onClick="inhalt_wechsel('bla.html');">Link</a></li>
+       <li><a href="#" id="link2" onClick="inhalt_wechsel('blog.html');" onMouseover="blau_untersctreichen('#link2');" onMouseout="blau_bag('#link2');">Link</a></li>
+       <li><a href="#" id="link3" onClick="inhalt_wechsel('bla.html');" onMouseover="blau_untersctreichen('#link3');" onMouseout="blau_bag('#link3');">Link</a></li>
 </ul>
     </div>
   </div>
