@@ -1,0 +1,85 @@
+<html>
+<head>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js" ></script>
+<link type="text/css" href="bootstrap/css/bootstrap.css" rel="stylesheet" >
+<style type="text/css">
+              #eigen2 { margin-left: 75%;
+                        background-color: ;
+                        margin-top:5%;
+
+              }
+              #frame { border-style: solid;
+
+                      margin-left:5%;
+                      position: absolute;
+
+              }
+
+
+  </style>
+  <script type="text/javascript">
+
+  // Funktionert leider noch nicht :(
+  
+  function inhalt_wechsel(pfad){
+
+     parent[frame].location.href = "blog.html";
+
+  }
+  
+  </script>
+
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+        <a class="brand" href="#">
+  Jan's Blog 
+         </a>
+     <li class="active">
+            <a href="#" onClick="inhalt_wechsel('home.html');">Home</a>
+      </li>
+       <li><a href="#" onClick="inhalt_wechsel('blog.html');">Link</a></li>
+       <li><a href="#" onClick="inhalt_wechsel('bla.html');">Link</a></li>
+</ul>
+    </div>
+  </div>
+</div>
+</div>
+<iframe src="home.html" id="frame" height="90%" name="frame"  width="65%" ></iframe>
+<div id="eigen2" >
+<ul class="nav nav-list">
+  <li class="nav-header">
+  </li>
+  <li class="active">
+    <a href="#">Home</a>
+  </li>
+  <li>
+    <a href="#">Über uns</a>
+  </li>
+   <li>
+    <a href="#">Blala</a>
+  </li>
+   <li>
+    <a href="#">Lulilii</a>
+  </li>
+   <li>
+    <a href="#">Jkekdjfsjf</a>
+  </li>
+   <li>
+    <a href="#">ksdjfksdjfksd</a>
+  </li>
+   <li>
+    <a href="#" >sjfsdjfsdf</a>
+  </li>
+
+</ul>
+</div>
+
+
+</body>
+</html>
